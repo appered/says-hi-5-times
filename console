@@ -1,0 +1,18 @@
+// Function to add "hi" message to the screen 5 times
+    for (let i = 0; i < 5; i++) {
+        const hiMessage = document.createElement('div');
+        hiMessage.textContent = 'hi';
+        hiMessage.style.position = 'fixed';
+        hiMessage.style.top = `${20 + i * 30}px`; // Adjust vertical position for each message
+        hiMessage.style.left = '50%';
+        hiMessage.style.transform = 'translateX(-50%)';
+        hiMessage.style.fontSize = '24px';
+        hiMessage.style.fontFamily = 'Arial, sans-serif';
+        hiMessage.style.color = '#000000'; // Adjust text color as needed
+        hiMessage.style.zIndex = '9999';
+
+        document.body.appendChild(hiMessage);
+    }
+}
+
+addHiMessages();
